@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Review Detection</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fake Review Detection</h1>
+        <form id="reviewForm" , action="/submit" , method="post">
+            <div class="form-group">
+                <label for="reviewInput">Enter your review:</label>
+                <input type="text" id="reviewInput" name="review" placeholder="Write your review here...">
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div class="answer"><h2>{% if result %} {{result}} {% endif %}</h2></div>
+    </div>
+
+</body>
+</html>
